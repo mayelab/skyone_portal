@@ -42,7 +42,7 @@ library(httr)
 #library(rlist)
 
 #library(vembedr)
-library(rgeos)
+#library(rgeos)
 
 library(aws.s3)
 library(base64enc)
@@ -62,9 +62,9 @@ library(colorspace)
 
 #library(slickR) #carousel de fotos
 
-library(metathis) #metadatos para el reporte html
+#library(metathis) #metadatos para el reporte html
 
-library(qrcode)
+#library(qrcode)
 #library(rclipboard)
 
 #remotes::install_github("RinteRface/waypointer")
@@ -598,7 +598,7 @@ generate_pages <- function(data, per_page, max_pages, page_selected){
     return(list(data = data, n_pages = 0, last_page = 0, min = 0, max = 0))
   }
 }
-
+ 
 agencia_name <- function(user, agencias, franquicias){
   if(user$agencia == "Global Master Office"){
     agencia_name <- "Global Master Office"
