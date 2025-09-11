@@ -24,7 +24,7 @@ RUN apt-get update && apt-get install -y \
 RUN R -e "install.packages(c('shiny'), repos='https://cloud.r-project.org/')"
 
 # install dependencies of the euler app  
-RUN R -e "install.packages(c('shinyWidgets', 'shinydashboard', 'dplyr', 'rvest', 'leaflet', 'stringr', 'sf', 'shinybusy', 'RMySQL', 'DBI', 'shinyjs', 'blastula', 'httr', 'aws.s3', 'base64enc', 'colorspace', 'waypointer'), repos='https://cloud.r-project.org/')"
+RUN R -e "install.packages(c('shinyWidgets', 'shinydashboard', 'dplyr', 'rvest', 'leaflet', 'stringr', 'sf', 'shinybusy', 'RMySQL', 'DBI', 'shinyjs', 'blastula', 'httr', 'aws.s3', 'base64enc', 'colorspace', 'RinteRface/waypointer'), repos='https://cloud.r-project.org/')"
 
 # copy the app to the image
 RUN mkdir /root/portal
