@@ -1,4 +1,4 @@
-ui <- div(style = "background-color: #DEEBF7", 
+ui <- div(style = "background-color: #DEEBF7",  
           
           tags$head(includeHTML(("google_analytics.html"))),
           
