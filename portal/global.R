@@ -67,6 +67,7 @@ library(colorspace)
 #library(qrcode)
 #library(rclipboard)
 
+#library(remotes)
 #remotes::install_github("RinteRface/waypointer")
 library(waypointer)
 
