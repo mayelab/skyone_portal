@@ -67,8 +67,8 @@ library(colorspace)
 #library(qrcode)
 #library(rclipboard)
 
-#library(remotes)
-#remotes::install_github("RinteRface/waypointer")
+library(remotes)
+remotes::install_github("RinteRface/waypointer", force = TRUE, upgrade = "never")
 library(waypointer)
 
 
@@ -633,3 +633,5 @@ num_fotos_inmo <- function(img, small){
     return(paste0("https://place-storage.nyc3.digitaloceanspaces.com/", list$Key))
   }
 } 
+
+
