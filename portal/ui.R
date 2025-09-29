@@ -135,7 +135,7 @@ ui <- div(style = "background-color: #DEEBF7",  #porfa
     
 "))),
           navbarPage(
-            title = a(href = "https://skyone.group/crm", img(src="logo_skyone_report.png", style = "height: 30px; margin-top: -5px")), 
+            title = a(href = "https://skyone.group/app_direct/crm", img(src="logo_skyone_report.png", style = "height: 30px; margin-top: -5px")), 
             id = "navBar",
             theme = "paper.css",
             collapsible = TRUE,
