@@ -10,11 +10,7 @@ redirect_to_portal <- function() {
   instances <- fromJSON(content(res, "text", encoding = "UTF-8"))
   active_users <- length(instances)
   
-  if(active_users <= max_shared_users) {
-    return("/app/portal-shared")
-  } else {
-    return("/app/portal-app")
-  }
+  return(paste0("/app/crm_", active_users))
 }
 
 redirect_url <- redirect_to_portal()
