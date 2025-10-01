@@ -10,7 +10,7 @@ redirect_to_portal <- function() {
   instances <- fromJSON(content(res, "text", encoding = "UTF-8"))
   active_users <- length(instances)
   
-  return(paste0("/app/crm_", active_users))
+  return(paste0("/app/crm"))
 }
 
 redirect_url <- redirect_to_portal()
