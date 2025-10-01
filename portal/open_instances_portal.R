@@ -2,7 +2,7 @@ library(httr)
 library(jsonlite)
 
 # URL del API interno de ShinyProxy para contar usuarios de portal-shared
-shinyproxy_api <- "http://localhost:8080/api/v1/apps/portal/instances"
+shinyproxy_api <- "http://localhost:8080/api/v1/apps/crm/instances"
 max_shared_users <- 5
 
 redirect_to_portal <- function() {
